@@ -4,4 +4,4 @@
 # draft: dùng để nháp
 # model: lưu các model
 # notebook: chạy test các model
-# src: các file python của project đóng thành các modul
+# src: các file python của project đóng thành các module
