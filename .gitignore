@@ -3,6 +3,7 @@ venv
 reference
 draft
 data
-models
-notebooks
+# models
+# notebooks
 /src/__pycache__
+/src/manual_model/__pycache__
