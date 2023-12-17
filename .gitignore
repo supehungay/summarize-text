@@ -4,3 +4,4 @@ draft
 data
 models
 notebooks
+/src/__pycache__
