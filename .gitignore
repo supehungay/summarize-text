@@ -1,10 +1,14 @@
 .venv
 venv
-reference
+configs
+docs/README.md
 draft
-data
-# models
-# notebooks
+data/dataset_article*
+data/test
+data/train
+data/validation
+data/ViMs*
+reference
 /src/__pycache__
 /src/manual_model/__pycache__
 
