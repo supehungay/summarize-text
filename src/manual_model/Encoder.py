@@ -1,4 +1,5 @@
-from EncoderLayer import *
+from library import tf
+from EncoderLayer import EncoderLayer
 from PositionalEncoding import PositionalEncoding
 
 class Encoder(tf.keras.layers.Layer):

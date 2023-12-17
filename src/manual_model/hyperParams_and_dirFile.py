@@ -1,4 +1,4 @@
-from library import os, VnCoreNLP
+from library import os, VnCoreNLP, tf
 
 # Các đường dẫn
 CURR_DIR = os.getcwd() # đường dẫn hiện tại
@@ -17,11 +17,11 @@ translator = str.maketrans('', '', '!"“”#$&\'*+/:;<=>?@[\\]^_`{|}~\n')
 filters = '!"#$%&()*+,-./:;<=>?@\\^`{|}~\t\n'
 oov_token = '<unk>'
 
-
+# đọ dài lớn nhất của encoder và decoder
 encoder_maxlen = 512
 decoder_maxlen = 128
 
-# hyper-params
+# các siêu tham số
 num_layers = 4
 d_model = 256
 dff = 512
@@ -30,3 +30,8 @@ num_heads = 8
 EPOCHS = 20
 BUFFER_SIZE = 20000
 BATCH_SIZE = 64
+
+# loss
+loss_object = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True, reduction='none')
+train_loss = tf.keras.metrics.Mean(name='train_loss')
+test_loss = tf.keras.metrics.Mean(name='test_loss')

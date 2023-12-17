@@ -1,5 +1,6 @@
-from MultiHeadAttention import *
-from FeedForwardNetwork import *
+from library import tf
+from MultiHeadAttention import MultiHeadAttention
+from FeedForwardNetwork import FeedForwardNetwork
 
 class DecoderLayer(tf.keras.layers.Layer):
     def __init__(self, d_model, num_heads, dff, rate=0.1):

@@ -1,4 +1,4 @@
-from library import *
+from library import tf
 from Encoder import Encoder
 from Decoder import Decoder
 

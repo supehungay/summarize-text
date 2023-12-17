@@ -1,4 +1,4 @@
-from library import *
+from library import tf, np
 
 class PositionalEncoding(tf.keras.layers.Layer):
     def __init__(self, position, d_model):

@@ -1,4 +1,4 @@
-from library import *
+from library import tf
 
 class FeedForwardNetwork(tf.keras.layers.Layer):
     def __init__(self):

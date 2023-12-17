@@ -1,4 +1,5 @@
-from DecoderLayer import *
+from library import tf
+from DecoderLayer import DecoderLayer
 from PositionalEncoding import PositionalEncoding
 
 class Decoder(tf.keras.layers.Layer):

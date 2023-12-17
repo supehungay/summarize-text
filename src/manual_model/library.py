@@ -7,9 +7,7 @@ from tensorflow import keras
 import time
 import re
 import pickle
-
 from vncorenlp import VnCoreNLP
 import string
 from tqdm import tqdm
-
 import swifter

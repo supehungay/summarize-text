@@ -1,4 +1,4 @@
-from library import glob, os, pd, re, VnCoreNLP
+from library import glob, os, pd, re
 from hyperParams_and_dirFile import translator, rdrsegmenter, DATA_DIR, FILE_DATA
 
 def process_text(text: str):
