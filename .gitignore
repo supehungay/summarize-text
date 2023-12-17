@@ -1,6 +1,5 @@
 .venv
 venv
-configs
 draft
 data/dataset_article*
 data/test
